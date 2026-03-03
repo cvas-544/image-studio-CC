@@ -28,7 +28,10 @@ Instead of copy-pasting prompts between tools, you generate, annotate, refine, a
 
 ## Built On
 
-This workspace is built on the [cc-nano-banana](https://github.com/kkoppenhaver/cc-nano-banana) skill by [@kkoppenhaver](https://github.com/kkoppenhaver), which provides the core Gemini CLI integration for image generation via the nanobanana extension.
+This workspace is built on two foundations:
+
+- **[cc-nano-banana](https://github.com/kkoppenhaver/cc-nano-banana)** by [@kkoppenhaver](https://github.com/kkoppenhaver) — the Claude Code skill that provides the core Gemini CLI integration for image generation via the nanobanana extension
+- **[Claude Playground Plugin](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/playground)** by Anthropic — the Claude Code plugin used to scaffold the interactive HTML workspace, providing the template structure for live controls, preview panels, and prompt output
 
 ## Requirements
 
