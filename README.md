@@ -17,6 +17,23 @@ A complete AI image creation workflow skill for Claude Code. Combines intelligen
 
 ---
 
+## Installation
+
+```bash
+# Clone directly into your Claude Code skills directory
+git clone https://github.com/cvas-544/image-studio-CC.git ~/.claude/skills/image-studio-CC
+
+# Run setup — installs nano-banana dependency and checks requirements
+cd ~/.claude/skills/image-studio-CC && bash setup.sh
+```
+
+Then load the skill in Claude Code:
+```
+image-studio-CC
+```
+
+---
+
 ## Files
 
 ```
@@ -24,6 +41,7 @@ image-studio-CC/
 ├── SKILL.md                     ← Full skill logic (loaded by Claude Code)
 ├── nano-banana-server.js        ← Local bridge server for the refinement workspace
 ├── nano-banana-playground.html  ← Visual refinement workspace (opens in browser)
+├── setup.sh                     ← Installer — checks dependencies, sets up nano-banana
 └── README.md                    ← This file
 ```
 

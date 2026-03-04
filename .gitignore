@@ -3,6 +3,10 @@
 .env.*
 *.key
 
+# Personal brand & style files (user-specific, not for sharing)
+brand.json
+style-memory.md
+
 # macOS
 .DS_Store
 
