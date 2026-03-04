@@ -222,3 +222,12 @@ tail -f /tmp/nb-server.log
 | `~/.config/image-prompt/brand.json` | Your saved brand identity |
 | `~/.config/image-prompt/style-memory.md` | Cumulative visual style journal (portable) |
 | `~/.claude/projects/.../nano-banana-skill-memory.json` | Annotation patterns from workspace refinements |
+
+---
+
+## 👨‍💼 Author
+
+Built by Vasu Chukka
+
+📬 vasu.chukka@outlook.com  
+💻 https://www.linkedin.com/in/vasu-chukka-1a3569116/
