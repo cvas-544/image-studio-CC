@@ -98,8 +98,8 @@ You load image-studio-CC (with optional image path or attachment)
         ↓
 Skill silently loads:
   - Annotation patterns (nano-banana-skill-memory.json)
-  - Style memory      (~/.config/image-prompt/style-memory.md)
-  - Brand settings    (~/.config/image-prompt/brand.json)
+  - Style memory      (~/.config/image-studio-cc/style-memory.md)
+  - Brand settings    (~/.config/image-studio-cc/brand.json)
         ↓
 You run /generate (or /prompt)
         ↓
@@ -149,7 +149,7 @@ Brand name, accent color, background color, text color,
 secondary color, visual style, tone, font preference
 ```
 
-Saved to: `~/.config/image-prompt/brand.json`
+Saved to: `~/.config/image-studio-cc/brand.json`
 
 Once saved, brand settings load silently every session — never asked again unless you run `/setup` or `/changeStyle`.
 
@@ -160,7 +160,7 @@ Once saved, brand settings load silently every session — never asked again unl
 Every reference image you analyze is automatically added to your style memory file:
 
 ```
-~/.config/image-prompt/style-memory.md
+~/.config/image-studio-cc/style-memory.md
 ```
 
 This file accumulates your visual style profile over time — recording visual style, color story, lighting character, composition tendencies, mood, and storytelling approach from each reference.
@@ -237,8 +237,8 @@ tail -f /tmp/nb-server.log
 
 | File | Purpose |
 |---|---|
-| `~/.config/image-prompt/brand.json` | Your saved brand identity |
-| `~/.config/image-prompt/style-memory.md` | Cumulative visual style journal (portable) |
+| `~/.config/image-studio-cc/brand.json` | Your saved brand identity |
+| `~/.config/image-studio-cc/style-memory.md` | Cumulative visual style journal (portable) |
 | `~/.claude/projects/.../nano-banana-skill-memory.json` | Annotation patterns from workspace refinements |
 
 ---

@@ -47,7 +47,7 @@ Pattern categories:
 ### Step 2 — Load Style Memory
 
 ```bash
-cat ~/.config/image-prompt/style-memory.md 2>/dev/null
+cat ~/.config/image-studio-cc/style-memory.md 2>/dev/null
 ```
 
 This file contains learned visual style, tone, and storytelling patterns extracted from past reference images. If it exists, silently absorb it — apply these patterns as a baseline style profile to every prompt generated in this session. Never show this file to the user unless they ask.
@@ -55,7 +55,7 @@ This file contains learned visual style, tone, and storytelling patterns extract
 ### Step 3 — Load Brand Settings
 
 ```bash
-cat ~/.config/image-prompt/brand.json 2>/dev/null
+cat ~/.config/image-studio-cc/brand.json 2>/dev/null
 ```
 
 - **If brand.json exists** → load silently. Never ask for brand info again.
@@ -100,7 +100,7 @@ Ask the user these questions (one at a time or as a grouped form):
 7. **Tone** — "What's the tone of your brand's visuals?" (e.g., professional, playful, premium, approachable)
 8. **Font style** (optional) — "Any preferred font style?" (e.g., serif, sans-serif, script)
 
-Then save to `~/.config/image-prompt/brand.json`:
+Then save to `~/.config/image-studio-cc/brand.json`:
 
 ```json
 {
@@ -143,7 +143,7 @@ Ask only about what they want to change. Update and re-save `brand.json`. Confir
 
 ### `/showBrand` — Display Saved Brand Settings
 
-Read and display `~/.config/image-prompt/brand.json` in a clean, readable format. If no settings are saved, prompt the user to run `/setup`.
+Read and display `~/.config/image-studio-cc/brand.json` in a clean, readable format. If no settings are saved, prompt the user to run `/setup`.
 
 ---
 
@@ -305,7 +305,7 @@ After analyzing any reference image, extract the style fingerprint and append it
 **Append to style memory file:**
 
 ```bash
-cat >> ~/.config/image-prompt/style-memory.md << 'EOF'
+cat >> ~/.config/image-studio-cc/style-memory.md << 'EOF'
 
 ---
 ## Reference: [brief image description] — [date]
@@ -324,7 +324,7 @@ EOF
 - Always append, never overwrite — the file is a cumulative style journal
 - Keep each entry concise (5–7 lines max)
 - Over time this file becomes the user's personal visual style guide
-- The user can share `~/.config/image-prompt/style-memory.md` with any AI to transfer their style context
+- The user can share `~/.config/image-studio-cc/style-memory.md` with any AI to transfer their style context
 
 ---
 
