@@ -1,5 +1,5 @@
 ---
-name: image-prompt
+name: image-studio-CC
 description: >
   Generate optimized prompts for Google's Nano Banana (Imagen) image generators and
   create brand-aligned visual content. Use this skill whenever the user uploads a
